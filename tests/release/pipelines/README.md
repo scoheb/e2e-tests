@@ -4,17 +4,17 @@ This suite contains e2e-tests for testing release pipelines from repository [rel
 
 ### All tests must have the label `release-pipelines` to avoid running them against the dev environment by OpenShift CI
 ## prerequisites: 
-   - Export the following environment variables:
-		```
-    	- TOOLCHAIN_API_URL_ENV: Offline token used for getting Keycloak token in order to authenticate against stage/prod cluster
-		- KEYLOAK_URL_ENV:       Keycloak URL used for authentication against stage/prod cluster
-		- OFFLINE_TOKEN_ENV :    Toolchain API URL used for authentication against stage/prod cluster
-		```
-   -  The tests will run on two dedicated namespaces, so a user not part of them need to request access to the following namespaces:
-		```
-		- dev-release-team-tenant
-		- managed-release-team-tenant
-		```
+- Export the following environment variables:
+     ```
+          - TOOLCHAIN_API_URL: Toolchain API URL used for authentication against stage/prod cluster
+          - KEYCLOAK_URL:       Keycloak URL used for authentication against stage/prod cluster
+          - OFFLINE_TOKEN:    Offline token used for getting Keycloak token in order to authenticate against stage/prod cluster
+     ```
+     -  The tests will run on two dedicated namespaces, so a user not part of them need to request access to the following namespaces:
+          ```
+          - dev-release-team-tenant
+          - managed-release-team-tenant
+          ```
 
 ## How to Run tests:
 

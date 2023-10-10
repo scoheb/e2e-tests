@@ -49,7 +49,7 @@ var _ = framework.ReleasePipelinesSuiteDescribe("[RHTAPREL-373]fbc happy path e2
 
 	stageOptions := utils.Options{
 		ToolchainApiUrl: os.Getenv(constants.TOOLCHAIN_API_URL_ENV),
-		KeycloakUrl:     os.Getenv(constants.KEYLOAK_URL_ENV),
+		KeycloakUrl:     os.Getenv(constants.KEYCLOAK_URL_ENV),
 		OfflineToken:    os.Getenv(constants.OFFLINE_TOKEN_ENV),
 	}
 

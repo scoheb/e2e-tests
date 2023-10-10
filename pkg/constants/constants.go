@@ -65,7 +65,7 @@ const (
 	OFFLINE_TOKEN_ENV = "OFFLINE_TOKEN"
 
 	// Keycloak URL used for authentication against stage/prod cluster
-	KEYLOAK_URL_ENV = "KEYLOAK_URL"
+	KEYCLOAK_URL_ENV = "KEYCLOAK_URL"
 
 	// Toolchain API URL used for authentication against stage/prod cluster
 	TOOLCHAIN_API_URL_ENV = "TOOLCHAIN_API_URL"
